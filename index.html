@@ -2,31 +2,112 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Web Page</title>
+<title>Mr. Friedcake</title>
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
+
 	<section id="topBar"></section><!--end topBar-->
+
 	<div id="siteContainer">
-    	<header id="mainHeader">
-        	<div id="logo"><p>Logo</p></div><!--end logo-->
-            <nav id="mainNav"><p>Nav</p></nav><!--end mainNav-->
-        </header><!--end mainHeader-->
-        <section id="promo">
-        	<div id="promoText"><p>Promo Text</p></div><!--end promoText-->
-        	<div id="promoImage"><p>Promo Image</p></div><!--end promoImage-->
-        </section><!--end promo-->
-        <section id="productInfo">
-        	<section class="productDesc"><p>Product Image &amp; Text</p></section><!--end productDesc1-->
-            <section class="productDesc"><p>Product Image &amp; Text</p></section><!--end productDesc2-->
-            <section class="productDesc"><p>Product Image &amp; Text</p></section><!--end productDesc3-->
-            <section class="productDesc"><p>Product Image &amp; Text</p></section><!--end productDesc4-->
-        </section><!--end productInfo-->
+        <h1 class="hidden">Mr. Friedcake Food Blog</h1>
+
+    	<header id="mainHeader">        	
+            <div id="logo">
+                <h2 class="hidden">Blog Logo</h2>
+                <img src="images/logo.svg" alt="Logo of Mr. Friedcake." width="500" height="273">
+            </div>
+            <!--end logo-->
+
+            <nav id="mainNav">
+                <h2 class="hidden">Main Navigation</h2>
+                <ul>
+                    <li><a href="#" class="selected">HOME</a></li>
+                    <li><a href="recipe.html">RECIPE</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <!--end mainNav-->
+        </header>
+        <!--end mainHeader-->
+
+
+        <main id="category">
+            <h2 class="hidden">Food category</h2>
+        	<section class="categoryImg">
+                <h3 class="hidden">stir fied food</h3>
+                <img src="images/home-eggplant.png" alt="stir fired eggplant" width="280" height="250">
+                <p>STIR FRIED</p>
+            </section>
+            <!--end catogoryImg1-->
+            <section class="categoryImg">
+                <h3 class="hidden">braised food</h3>
+                <img src="images/home-chicken-wings.png" alt="braised chicken wings" width="280" height="250">
+                <p>BRAISED</p>
+            </section>
+            <!--end categoryImg2-->
+            <section class="categoryImg">
+                <h3 class="hidden">bioled food</h3>
+                <img src="images/home-winter-melon.png" alt="boiled winter melon soup" width="280" height="250">
+                <p>BOLIED</p>
+            </section>
+            <!--end categoryImg3-->
+        </main>
+        <!--end categoryImages-->
+
+
+        <section id="hero">
+            <h2>Weekly Recipe</h2>
+            <img src="images/home-hero-image.png" alt="green bean soup" width="920" height="300">
+        </section>
+
+        <section id="viewMoreBut">
+            <p>View more</p>
+        </section>
+        </main>
+
+
         <footer id="mainFooter">
-        	<div id="footerNav"><p>Footer Nav</p></div><!--end FooterNav-->
-            <div id="copyRight"><p>Copyright Info</p></div><!--end Copyright-->
-        </footer><!--end mainFooter-->
-    </div><!--end siteContainer-->
+
+            <div id="footerInfo">
+            <h2 class="hidden">Social media and footer navigation</h2>
+
+                <div class="socialMedia">
+                <h3 class="hidden">Social Media</h3>
+                    <ul id="socialMediaIcon">
+                        <li><a href="http://www.facebook.com">
+                            <img src="images/facebook.png" alt="facebook" width="30" height="30">
+                        </a></li>
+                        <li><a href="http://www.twitter.com">
+                            <img src="images/twitter.png" alt="twitter" width="30" height="30">
+                        </a></li>
+                        <li><a href="http://www.instagram.com">
+                            <img src="images/instagram.png" alt="instagram" width="30" height="30">
+                        </a></li>
+                    </ul>
+                </div>   
+           
+                <nav id="footerNav">
+                <h3 class="hidden">Footer Navigation</h3>
+                    <ul>
+                        <li><a href="#" class="selected">HOME</a></li>
+                        <li><a href="recipe.html">RECIPE</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--end FooterNav-->
+            <div id="copyRight">
+                <p>Copyright &copy; 2020 Mr. Friedcake</p>
+            </div>
+            <!--end Copyright-->
+        </footer>
+        <!--end mainFooter-->
+
+    </div>
+    <!--end siteContainer-->
 <script src="js/main.js"></script>    
 </body>
 </html>

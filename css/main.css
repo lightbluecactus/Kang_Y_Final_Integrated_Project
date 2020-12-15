@@ -104,7 +104,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	width: 500px;
 }
 
-#promo 
+#foodInfo 
 {
 	margin-top: 40px;
 	border-bottom: solid 1px #DDD;
@@ -114,24 +114,19 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
   	justify-content: flex-start;
 }
 
-/*Get rid of this, here just to give different height to promo*/
-#promo p 
-{
-	line-height: 250px;
-}
 
-#promoText 
+#tilte 
 {
 	width: 600px;
 }
 
-#promoImage 
+#preparation 
 {
 	margin-left: auto;
 	width: 280px;
 }
 
-#productInfo 
+#steps 
 {
 	margin-top: 40px;
 	display: flex;
@@ -142,12 +137,12 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 }
 
 /*Get rid of this, here just to give different height to productInfo*/
-#productInfo p 
+#steps p 
 {
 	line-height: 300px;
 }
 
-.productDesc 
+.stpesDivided 
 {
 	width: 200px;
 }
@@ -174,7 +169,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 
 /*Page 2 - Notice we are using one style sheet for all of the pages*/
 
-#contentCon {
+#mainContact {
 	margin-top: 40px;
 	border-bottom: solid 1px #DDD;
 	padding-bottom: 40px;
@@ -183,18 +178,12 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
   	justify-content: flex-start;
 }
 
-/*Get rid of this, here just to give different height to promo*/
-#contentCon p 
-{
-	line-height: 630px;
-}
-
-#content1 
+#contactForm
 {
 	width: 440px;
 }
 
-#content2 
+#contactInfo 
 {
 	margin-left: auto;
 	width: 440px;
@@ -202,7 +191,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 
 /*Page 3*/
 
-#productImages 
+#category 
 {
 	margin-top: 40px;
 	border-bottom: solid 1px #DDD;
@@ -213,18 +202,18 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 }
 
 /*Get rid of this, here just to give different height*/
-#productImages p
+#category p
 {
 	line-height: 250px;
 }
 
-.productImg 
+.categoryImg 
 {
 	width: 280px;
 }
 
 
-#contentAreaBig
+#hero
 {
 	margin-top: 40px;
 	border-bottom: solid 1px #DDD;
@@ -232,26 +221,13 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 }
 
 /*Get rid of this, here just to give different height*/
-#contentAreaBig p 
+#hero p 
 {
 	line-height: 300px;
 }
 
-#promoImageBig
+#hero
 {
 	width: 920px;
-}
-
-
-/*Page 4*/
-
-.productDescLargeLeft 
-{
-	width: 410px;
-}
-
-.productDescLargeRight 
-{
-	width: 410px;
 }
 
