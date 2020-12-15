@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mr. Friedcake</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+<body>
+
+    <section id="topBar"></section><!--end topBar-->
+
+    <div id="siteContainer">
+        <h1 class="hidden">Mr. Friedcake Food Blog</h1>
+        
+        <header id="mainHeader">           
+            <div id="logo">
+                <h2 class="hidden">Blog Logo</h2>
+                <img src="images/logo.svg" alt="Logo of Mr. Friedcake." width="500" height="273">
+            </div>
+            <!--end logo-->
+
+            <nav id="mainNav">
+                <h2 class="hidden">Main Navigation</h2>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="recipe.html">RECIPE</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#" class="selected">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <!--end mainNav-->
+        </header>
+        <!--end mainHeader-->
+
+
+        <main id="mainContact">
+            <h2 class="hidden">Contact us</h2>
+
+        	<section id="contactForm">
+                <h3 class="hidden">Contact form</h3>
+                <p id="contactText">
+                If you have any question or comment, don't hasitate to reach out for us!
+                </p>
+
+                <form action="form.php" method="post">
+                    
+                    <label for="name">Name:</label>
+                    <input type="text" reqiured id="name" size="35" placeholder="Put your neme here">
+
+                    <label for="email">Email:</label>
+                    <input type="email" required id="email" size="35" placeholder="Leave us an email">
+
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" reqiured></textarea>
+
+                    <label for="human">What is 8 + 9 ?</label>
+                    <input type="text" id="human" required placeholder="To help reduce spam">
+
+                    <input type="submit" value="SUBMIT">
+                </form>
+            </section>
+            <!--end form-->
+
+        	<section id="contactInfo">
+                <h3 class="hidden">Contact Information</h3>
+                <ul>
+                    <li>(+86) 6601 2345</li>
+                    <li>mrfriedcake@sampleemail.com</li>
+                    <li>1234 Sample Road, Beijing, China</li>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12272.904756677224!2d116.16231983192607!3d39.734569730792636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f0396d4ac00b05%3A0x83f5cb8798db860e!2z5YyX5Lqs55CG5bel5aSn5a246Imv6YSJ5YyX5qCh5Y2A!5e0!3m2!1szh-TW!2sca!4v1608069834005!5m2!1szh-TW!2sca" width="380" height="420" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </ul>
+            </section>
+            <!--end content2-->
+        </main>
+        <!--end contentCon-->
+
+
+        <footer id="mainFooter">
+
+            <div id="footerInfo">
+            <h2 class="hidden">Social media and footer navigation</h2>
+
+                <div class="socialMedia">
+                <h3 class="hidden">Social Media</h3>
+                    <ul id="socialMediaIcon">
+                        <li><a href="http://www.facebook.com">
+                            <img src="images/facebook.png" alt="facebook" width="30" height="30">
+                        </a></li>
+                        <li><a href="http://www.twitter.com">
+                            <img src="images/twitter.png" alt="twitter" width="30" height="30">
+                        </a></li>
+                        <li><a href="http://www.instagram.com">
+                            <img src="images/instagram.png" alt="instagram" width="30" height="30">
+                        </a></li>
+                    </ul>
+                </div>   
+           
+                <nav id="footerNav">
+                <h3 class="hidden">Footer Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="recipe.html">RECIPE</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#" class="selected">CONTACT US</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--end FooterNav-->
+            <div id="copyRight">
+                <p>Copyright &copy; 2020 Mr. Friedcake</p>
+            </div>
+            <!--end Copyright-->
+        </footer>
+        <!--end mainFooter-->
+
+    </div><!--end siteContainer-->
+<script src="js/main.js"></script>    
+</body>
+</html>
