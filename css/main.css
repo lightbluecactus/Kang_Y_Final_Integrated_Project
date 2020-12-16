@@ -1,21 +1,14 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/*Remove this rule, this is only for demo purposes to make the boxes black with white text
-The line height on the <p> tag gives each box a height value*/
+/* Table of Content */
 
-p
-{
-	color: #fff;
-	line-height: 100px;
-	background: #000;
-	text-align: center;
-	margin: 0;
-}
+/* basic reset and html selectors ---- line */
+/* header ---------------------------- line */
+
+
 
 /*basic reset*/
-/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
-
 div,p,body,header,footer,section,article,nav 
 { 
 	margin: 0; 
@@ -33,9 +26,11 @@ img
 
 body 
 {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 12px;
-	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #271813;
+	background-color: #ffffff;
+	background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23dfd0ce' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
 
@@ -53,8 +48,6 @@ a:hover, a:active
 	text-decoration:none; 
 }
 
-/*hide elements from browser but show for doc outline*/
-
 .hidden
 {
 	display: none;
@@ -63,67 +56,296 @@ a:hover, a:active
 /*section is block level and no width specidied therefore stretches full screen*/
 #topBar
 {
-	background-color: #000;
+	background-color: #7c686e;
 	height: 20px;
 }
-
-/*Site Container*/
-/*This is essentially a box that we place the whole site in.  
-We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px (960px) so it fits on 1024x768 screens.*/
 
 #siteContainer 
 {
 	margin: 0 auto;
-	width: 920px;
-	padding-left: 20px;
-	padding-right: 20px;
+	width: 960px;
+	background-color: #fff;
 }
 
-/*This is a flex container*/
+/* start of header */
+
 #mainHeader
 {
-	margin-top: 40px;
-	padding-bottom: 40px;
 	display: flex;
 	flex-direction: row;
   	justify-content: flex-start;
-	border-bottom: solid 1px #DDD;
+  	margin-bottom: 35px;
 }
 
-/*This is a flex item*/
 #logo
 {
-	width: 200px;
+	width: 370px;
+	margin-top: 60px;
+	margin-left: 20px;
 }
 
-/*This is also a flex item*/
-/*We use margin left auto to send it all the way to the right*/
 #mainNav 
 {
 	margin-left: auto;
 	width: 500px;
+	height: 25px;
+	margin-top: 120px;
+	margin-left: 60px;
 }
 
-#foodInfo 
+#mainNav ul
+{
+	list-style: none;
+}
+
+#mainNav ul li
+{
+	font-size: 20px;
+	display: inline;
+	padding: 5px;
+}
+
+#mainNav ul li a
+{
+	color: #271813;
+	padding: 5px;
+}
+
+#mainNav ul li a:hover
+{
+	background-color: #f1c879;
+}
+
+.selected 
+{
+	filter: grayscale(100%);
+}
+
+
+/* start of index main */
+
+.mainContent
+{
+	background-color: #dfd0ce;
+	padding-top: 45px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 100px;
+}
+
+#category 
 {
 	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+}
+
+#category a
+{
+	color: #dfd0ce;
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 3px;
+}
+
+#categoryImg1 
+{
+	width: 280px;
+	height: 250px;
+	background: url(../images/home-eggplant.png) no-repeat bottom;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#categoryImg2 
+{
+	width: 280px;
+	height: 250px;
+	background: url(../images/home-chicken-wings.png) no-repeat bottom;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#categoryImg3 
+{
+	width: 280px;
+	height: 250px;
+	background: url(../images/home-winter-melon.png) no-repeat bottom;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#hero
+{
+/*	padding-bottom: 0px;*/
+}
+
+#hero h3
+{
+	font-family: Georgia, Times New Roman, serif;
+	font-size: 40px;
+	font-weight: bold;
+	letter-spacing: 3px;
+	color: #dfd0ce;	
+	position: relative;
+	top: 100px;
+	background-color: #271813;
+	width: 500px;
+	padding-left: 50px;
+	padding-bottom: 5px;
+}
+
+#handwriting
+{
+	margin-left: 590px;
+	position: relative;
+	bottom: 130px;
+}
+
+.viewMoreBut
+{
+	font-size: 25px;
+	text-align: center;
+	padding: 13px 0px;
+	border: 3px solid #7c686e;
+	background-color: #dfd0ce;
+	display: inline-block;
+	margin-left: 370px;
+}
+
+.viewMoreBut a
+{
+	color: #7c686e;	
+	padding: 15px 30px;
+}
+
+.viewMoreBut a:hover
+{
+	background-color: #7c686e;
+	color: #dfd0ce;
+}
+
+/* start of footer */
+
+#mainFooter 
+{
+	margin-top: 20px;
 	padding-bottom: 40px;
 	display: flex;
 	flex-direction: row;
   	justify-content: flex-start;
 }
 
+#socialMedia ul
+{
+	list-style-type: none;
+	padding-left: 20px;
+}
 
-#tilte 
+#socialMedia ul li
+{
+	display: inline;
+	padding: 2px;
+}
+
+#footerNav 
+{
+	width: 500px;
+	height: 25px;
+	margin-left: auto;
+}
+
+#footerNav ul
+{
+	list-style-type: none;
+	padding-left: 20px;
+}
+
+#footerNav ul li
+{
+	display: inline;
+	font-size: 18px;
+	padding: 5px;
+}
+
+#footerNav ul li a
+{
+	color: #7c686e;
+}
+
+#footerNav ul li a:hover
+{
+	color: #271813;
+}
+
+#copyRight 
+{
+	margin-top: 65px;
+	margin-left: auto;
+	width: 280px;
+}
+
+#copyRight p
+{
+	color: #7c686e;
+	font-size: 18px;
+}
+
+/* start of recipe main */
+
+#foodInfo 
+{
+	margin-top: 45px;
+	padding-bottom: 80px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+
+#foodTitle
 {
 	width: 600px;
+	height: 250px;
+	background: url(../images/recipe-title.png) no-repeat bottom;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#foodTitle h4
+{
+	color: #dfd0ce;
+	font-size: 50px;
+	letter-spacing: 3px;
+	text-align: center;
+	border: solid;
+	border-color: #dfd0ce;
+	border-width: 3px;
+	padding: 80px 50px 80px 50px;
 }
 
 #preparation 
 {
 	margin-left: auto;
 	width: 280px;
+	height: 250px;
+}
+
+#preparation p
+{
+	font-family: Georgia, Times New Roman, serif;
+	color: #271813;
+	font-size: 15px;
+	margin-top: 10px;
 }
 
 #steps 
@@ -132,47 +354,41 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	display: flex;
 	flex-direction: row;
   	justify-content: space-between;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
+	padding-bottom: 80px;
 }
 
-/*Get rid of this, here just to give different height to productInfo*/
-#steps p 
-{
-	line-height: 300px;
-}
 
 .stpesDivided 
 {
 	width: 200px;
 }
 
-#mainFooter 
+.stpesDivided p
 {
-	margin-top: 40px;
-	margin-bottom: 40px;
-	display: flex;
-	flex-direction: row;
-  	justify-content: flex-start;
+	font-family: Georgia, Times New Roman, serif;
+	color: #271813;
+	font-size: 15px;
+	line-height: 20px;
+	margin-top: 10px;
 }
 
-#footerNav 
+.stpesDivided span
 {
-	width: 500px;
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
 }
 
-#copyRight 
+
+/* start of contact main */
+
+#mainContact 
 {
-	margin-left: auto;
-	width: 310px;
-}
-
-/*Page 2 - Notice we are using one style sheet for all of the pages*/
-
-#mainContact {
-	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
+	background-color: #dfd0ce;
+	padding-top: 45px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 100px;
 	display: flex;
 	flex-direction: row;
   	justify-content: flex-start;
@@ -180,54 +396,73 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 
 #contactForm
 {
-	width: 440px;
+	width: 380px;
+}
+
+#contactText
+{
+	color: #271813;
+	font-size: 20px;
+	line-height: 28px;
+	width: 330px;
+	margin-top: 40px;
+	margin-bottom: 45px;
 }
 
 #contactInfo 
 {
-	margin-left: auto;
-	width: 440px;
+	margin-left: 160px;
+	width: 380px;
 }
 
-/*Page 3*/
-
-#category 
+input, textarea
 {
+	display: block;
+	width: 300px;
+	height: 35px;
+	margin-top: 5px;
+	margin-bottom: 35px;
+	border: 2px solid #7c686e;
+	background-color: #dfd0ce;
+}
+
+label
+{
+	color: #7c686e;
+	font-size: 18px;
+}
+
+#comments
+{
+	width: 300px;
+	height: 100px;
+}
+
+#submit
+{
+	width: 120px;
+	height: 42px;
+	background-color: #d67f41;
+	padding: 12px 22px 12px 22px;
 	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
-	display: flex;
-	flex-direction: row;
-  	justify-content: space-between;
+	border: none;
+	color: #dfd0ce;
+	font-size: 18px;
 }
 
-/*Get rid of this, here just to give different height*/
-#category p
+#contactInfo p
 {
-	line-height: 250px;
+	color: #271813;
+	font-size: 20px;
+	padding-top: 40px;
+	padding-bottom: 10px;
 }
 
-.categoryImg 
+#contactInfo ul
 {
-	width: 280px;
+	list-style-type: none;
+	color: #7c686e;
+	font-size: 18px;
+	padding: 0px;
+	line-height: 28px;
 }
-
-
-#hero
-{
-	margin-top: 40px;
-	border-bottom: solid 1px #DDD;
-	padding-bottom: 40px;
-}
-
-/*Get rid of this, here just to give different height*/
-#hero p 
-{
-	line-height: 300px;
-}
-
-#hero
-{
-	width: 920px;
-}
-

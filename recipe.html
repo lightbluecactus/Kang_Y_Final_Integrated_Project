@@ -7,23 +7,23 @@
 </head>
 <body>
 
-    <section id="topBar"></section><!--end topBar-->
+    <div id="topBar"></div><!--end topBar-->
 
     <div id="siteContainer">
         <h1 class="hidden">Mr. Friedcake Food Blog</h1>
         
         <header id="mainHeader">           
-            <div id="logo">
+            <section id="logo">
                 <h2 class="hidden">Blog Logo</h2>
-                <img src="images/logo.svg" alt="Logo of Mr. Friedcake." width="500" height="273">
-            </div>
+                <img src="images/logo.svg" alt="Logo of Mr. Friedcake." width="370" height="100">
+            </section>
             <!--end logo-->
 
             <nav id="mainNav">
                 <h2 class="hidden">Main Navigation</h2>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="#" class="selected">RECIPE</a></li>
+                    <li class="selected"><a href="#">RECIPE</a></li>
                     <li><a href="#">ABOUT</a></li>
                     <li><a href="contact.html">CONTACT US</a></li>
                 </ul>
@@ -32,66 +32,67 @@
         </header>
         <!--end mainHeader-->
 
+        <main class="mainContent">
+            <h2 class="hidden">Main content</h2>
+            <section id="foodInfo">
+            <h3 class="hidden">Green bean soup recipe</h3>
 
-        <section id="foodInfo">
-            <h2 class="hidden">Green bean soup recipe</h2>
-
-            <section id="title">
-                <h3>Green Bean Soup</h3>
-                <img src="images/recipe-title.png" width="600" height="250">
-            </section>
+                <section id="foodTitle">
+                <h4>Green Bean Soup</h4>
+                </section>
         	
-        	<div id="preparation">
-                <img src="images/recipe-preparation.png" alt="Prepare some sugar, a cup of green bean, a bowl, a pot and a serving spoon." width="280" height="223">
-                <p>This is all you need to prepare!</p>
-            </div>
+        	   <div id="preparation">
+                    <img src="images/recipe-preparation.png" alt="Prepare some sugar, a cup of green bean, a bowl, a pot and a serving spoon." width="280" height="223">
+                    <p>This is all you need to prepare!</p>
+                </div>
         <!--end preparation-->
         </section>
         <!--end food info-->
 
-        <main id="steps">
-            <h2 class="hidden">Steps to cook</h2>
+        <section id="steps">
+            <h3 class="hidden">Steps to cook</h3>
         	<section class="stpesDivided">
-                <h3 class="hidden">Step 1</h3>
+                <h4 class="hidden">Step 1</h4>
                 <img src="images/recipe-step-1.png" alt="a bowl of green beans in water" width="200" height="200">
                 <p><span class="stepBold">Step 1:</span>
                 Put a cup of green beans into water and wait for 4 - 5 hours.</p>
             </section>
             <!--end step1-->
             <section class="stpesDivided">
-                <h3 class="hidden">Step 2</h3>
+                <h4 class="hidden">Step 2</h4>
                 <img src="images/recipe-step-2.png" alt="boiling water" width="200" height="200">
                 <p><span class="stepBold">Step 2:</span>
                 Boil three bowls of water.</p>
             </section>
             <!--end pstep2-->
             <section class="stpesDivided">
-                <h3 class="hidden">Step 3</h3>
+                <h4 class="hidden">Step 3</h4>
                 <img src="images/recipe-step-3.png" alt="cooking green beans" width="200" height="200">
                 <p><span class="stepBold">Step 1:</span>
                 Put green beans into your pot and cook for 25 minutes at middle heat.</p>        
             </section>
             <!--end step3-->
             <section class="stpesDivided">
-                <h3 class="hidden">Step 4</h3>
+                <h4 class="hidden">Step 4</h4>
                 <img src="images/recipe-step-4.png" alt="cooking green beans" width="200" height="200">
                 <p><span class="stepBold">Step 4:</span>
                 Finished! Let's add some sugar before serve.</p>        
             </section>
             <!--end step4-->
-        </main>
+        </section>
         <!--end steps-->
+        <div class="viewMoreBut">
+            <a href="recipe.html">All recipes</a>
+        </div>
+        </main>
 
 
         <footer id="mainFooter">
 
             <div id="footerInfo">
-            <h2 class="hidden">Social media and footer navigation</h2>
-
-                <div class="socialMedia">
-                <h3 class="hidden">Social Media</h3>
-                    <ul id="socialMediaIcon">
-                        <li><a href="http://www.facebook.com">
+                <section id="socialMedia">
+                <h2 class="hidden">Social Media</h2>
+                    <ul><li><a href="http://www.facebook.com">
                             <img src="images/facebook.png" alt="facebook" width="30" height="30">
                         </a></li>
                         <li><a href="http://www.twitter.com">
@@ -101,13 +102,13 @@
                             <img src="images/instagram.png" alt="instagram" width="30" height="30">
                         </a></li>
                     </ul>
-                </div>   
+                </section>  
            
                 <nav id="footerNav">
-                <h3 class="hidden">Footer Navigation</h3>
+                <h2 class="hidden">Footer Navigation</h2>
                     <ul>
                         <li><a href="index.html">HOME</a></li>
-                        <li><a href="#" class="selected">RECIPE</a></li>
+                        <li class="selected"><a href="#">RECIPE</a></li>
                         <li><a href="#">ABOUT</a></li>
                         <li><a href="contact.html">CONTACT US</a></li>
                     </ul>
